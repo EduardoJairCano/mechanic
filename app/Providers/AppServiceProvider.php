@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace mechanicus\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
