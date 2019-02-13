@@ -26,7 +26,8 @@ class ClientesController extends Controller
      */
     public function create()
     {
-        //
+        // Asignación de la vista que regresará la función create
+        return view('cliente.create');
     }
 
     /**
