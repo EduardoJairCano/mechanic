@@ -14,3 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// Primera ruta
+Route::get('/hola_mundo', function(){
+    return 'Hola mundo';
+});
+
+
+/*  Ruta con parametros
+    Es posible agregar parámetros en las rutas, los cuales pueden ser :
+        - Opcionales.           <{%parametro}>?
+        - Valor por default     $parametro = <valor_por_default>
+*/
+Route::get('/name/{name}/{lastname?}', function($name, $lastname = null) {
+    return "Bienvenido ".$name ." ". $lastname;
+});
+
+
