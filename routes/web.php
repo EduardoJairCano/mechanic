@@ -39,3 +39,11 @@ Route::get('/name/{name}/{lastname?}', function($name, $lastname = null) {
         Route::get( </URL>, <Controlador@Función> );
 */
 Route::get('/prueba/{name?}', 'PruebaController@prueba');
+
+
+/*  Ruta Controllador Resource
+    Esta ruta es empleada para iterar con datos en respecto a alguna variable, objeto o modelo, en este caso como no se
+        selecciona alguna función en específico, se ejecuta el index del controlador.
+    Para cada una de las acciones posibles para este controlador, es necesario escribir el tipo de acción HTTP adecuado.
+*/
+Route::resource('/cliente', 'ClientesController');
