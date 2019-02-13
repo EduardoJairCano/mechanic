@@ -32,3 +32,10 @@ Route::get('/name/{name}/{lastname?}', function($name, $lastname = null) {
 });
 
 
+/* Ruta controlador
+    Para emplear una ruta-controlador, solo es necesario asignar la URL de navegación, y en la otra sección el nombre
+    del controlador, en caso de de querer utilizar una función propia del controlador, se separa por un @
+
+        Route::get( </URL>, <Controlador@Función> );
+*/
+Route::get('/prueba/{name?}', 'PruebaController@prueba');
