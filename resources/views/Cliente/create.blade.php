@@ -15,10 +15,23 @@
     Tambien es posible crear sections en el cual su contenido sea un formto específico de HTML
 --}}
 @section('content')
-    <div class="form-group">
-        <label for="">Nombre</label>
-        <input type="text" class="form-control">
-    </div>
 
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    {{--
+        Formulario de Captura, para ello empleamos un metodo HTTP llamado POST, el cual sirve para almacenar datos, en
+         la variable action ingresamos la ruta en la cual deseamos almacenar dichos datos --}}
+    <form class="form-group" method="POST" action="/cliente">
+        {{-- Token de autentificación --}}
+        @csrf
+        <div class="form-group">
+            <label for="">Nombre</label>
+            {{-- Se tendra que asignar dentro de los inputs el nombre de la variable a la que deseamos asignar --}}
+            <input type="text" name="nombre" class="form-control">
+
+            <label for="">Domicilio</label>
+            <input type="text" name="domicilio" class="form-control">
+
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+
 @endsection

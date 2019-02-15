@@ -38,7 +38,12 @@ class ClientesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        /* Regresa un campo en específico */
+        return $request->input('nombre');
+
+        /* Regresa todos los datos que son enviados por los formularios
+        return $request->all();
+        */
     }
 
     /**
