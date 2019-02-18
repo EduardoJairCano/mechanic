@@ -27,7 +27,7 @@
             {{-- Se tendra que asignar dentro de los inputs el nombre de la variable a la que deseamos asignar --}}
             <input type="text" name="nombre" class="form-control">
 
-            <label for="">Domicilio</label>
+            <label for="">Domicilio</label>Inputs
             <input type="text" name="domicilio" class="form-control">
 
         </div>
