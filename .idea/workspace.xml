@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c075f29-a267-427b-a5a6-7a07a65f84a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Cliente/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Cliente/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Cliente/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Cliente/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,14 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientesController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="644">
-              <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+              <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
               <folding>
                 <element signature="e#241#257#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/Layouts/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -38,23 +47,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Cliente/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="76" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="76" />
+            <state relative-caret-position="460">
+              <caret line="20" column="66" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="66" />
               <folding>
-                <element signature="e#429#450#0#HTML" expanded="true" />
+                <element signature="e#458#496#0#HTML" expanded="true" />
+                <element signature="e#506#582#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Layouts/app.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -83,8 +84,8 @@
         <option value="$PROJECT_DIR$/resources/views/Layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_19_105122_agregar_avatar_a_cliente.php" />
         <option value="$PROJECT_DIR$/resources/views/Cliente/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Cliente/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ClientesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/Cliente/index.blade.php" />
       </list>
     </option>
   </component>
@@ -221,17 +222,6 @@
             <path>
               <item name="mechanicus" type="b2602c69:ProjectViewProjectNode" />
               <item name="mechanicus" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mechanicus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mechanicus" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mechanicus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mechanicus" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -266,7 +256,7 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -302,12 +292,12 @@
       <workItem from="1550160260207" duration="933000" />
       <workItem from="1550174919710" duration="5727000" />
       <workItem from="1550248916298" duration="2506000" />
-      <workItem from="1550253056714" duration="28822000" />
+      <workItem from="1550253056714" duration="30179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47461000" />
+    <option name="totallyTimeSpent" value="48818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1618" height="887" extended-state="6" />
@@ -463,22 +453,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Cliente/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="76" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="76" />
+        <state relative-caret-position="644">
+          <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
           <folding>
-            <element signature="e#429#450#0#HTML" expanded="true" />
+            <element signature="e#241#257#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientesController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/Cliente/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+        <state relative-caret-position="460">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="66" />
           <folding>
-            <element signature="e#241#257#0#PHP" expanded="true" />
+            <element signature="e#458#496#0#HTML" expanded="true" />
+            <element signature="e#506#582#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
