@@ -18,7 +18,7 @@
                     <div class="card-body">
                         <h5 class="card-title"> {{$cliente->nombre}} </h5>
                         <p class="card-text"> Domicilio: {{$cliente->domicilio}} </p>
-                        <a href="#" class="btn btn-primary">Acceder</a>
+                        <a href="/cliente/{{$cliente->id}}" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>

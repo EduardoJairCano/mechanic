@@ -87,9 +87,19 @@ class ClientesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Cliente $cliente)
     {
-        //
+        /*  Se tendra que buscar dentro de la base de datos por medio de la busqueda de un
+        atributo en especifico, en este caso seria el ID de la tabla, por medio de la función propia
+        de Eloquent find()
+            $cliente = Cliente::find($id);
+        En caso de querer implementar solo el uso de un valor Id e instanciar un objeto para la
+        función, se emplea dicho atributo como parámetro.
+
+            En caso de no querer instanciar el objeto en la función  en la cual como parámetro se
+         obtiene un modelo y el nombre del modelo
+        */
+        return view('cliente.show', compact('cliente'));
     }
 
     /**
