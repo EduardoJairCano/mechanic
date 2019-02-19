@@ -6,6 +6,7 @@
 namespace mechanicus\Http\Controllers;
 
 use Illuminate\Http\Request;
+use mechanicus\Cliente;
 
 class ClientesController extends Controller
 {
@@ -38,8 +39,17 @@ class ClientesController extends Controller
      */
     public function store(Request $request)
     {
-        /* Regresa un campo en específico */
+        /* Para agregar los datos de una entidad, en este caso un nuevo cliente dentro de la base de datos, es neceario
+        instanciar los elementos obtenidos a un objeto y con el guardarlo en la base de datos por medio de la función save() */
+        $cliente = new Cliente();
+        $cliente->nombre = $request->input('nombre');
+        $cliente->domicilio = $request->input('domicilio');
+        $cliente->save();
+        return 'Cliente agregado exitosamente';
+
+        /* Regresa un campo en específico
         return $request->input('nombre');
+        */
 
         /* Regresa todos los datos que son enviados por los formularios
         return $request->all();
