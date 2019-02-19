@@ -12,7 +12,7 @@
         @foreach($clientes as $cliente)
             <div class="col-sm">
                 <div class="card" style="width: 18rem;">
-                    {{--<img class="card-img-top" src="..." alt="Card image cap">--}}
+                    <img class="card-img-top" src="images/{{$cliente->avatar}}" alt="">
                     <div class="card-body">
                         <h5 class="card-title"> {{$cliente->nombre}} </h5>
                         <p class="card-text"> Domicilio: {{$cliente->domicilio}} </p>

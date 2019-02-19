@@ -50,11 +50,25 @@ class ClientesController extends Controller
      */
     public function store(Request $request)
     {
+        /* La manera de trabajar con archivos y una base de datos es por medio del almacenamiento del nombre del archivo
+        primero se comprueba si existe un atributo del tipo file y despues se hace la obtención de los datos del mismo,
+        se iguala el nombre a una variable y se le puede agregar el tiempo como parametro complementario y asi evitar
+        que el nombre del archivo se repita. Previo a ello almacenamos la imagen en un directorio con la función move()*/
+        if($request->hasfile('avatar')){
+            $file = $request->file('avatar');
+            $name_file = time().$file->getClientOriginalName();
+            $file->move(oublic_path().'/images/', $name_file);
+        }
+        else{
+            $name_file = 'default_avatar.png';
+        }
+
         /* Para agregar los datos de una entidad, en este caso un nuevo cliente dentro de la base de datos, es neceario
         instanciar los elementos obtenidos a un objeto y con el guardarlo en la base de datos por medio de la función save() */
         $cliente = new Cliente();
         $cliente->nombre = $request->input('nombre');
         $cliente->domicilio = $request->input('domicilio');
+        $cliente->avatar = $name_file;
         $cliente->save();
         return 'Cliente agregado exitosamente';
 
