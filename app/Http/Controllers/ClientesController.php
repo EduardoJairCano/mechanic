@@ -5,6 +5,7 @@
 */
 namespace mechanicus\Http\Controllers;
 
+use http\Client;
 use Illuminate\Http\Request;
 use mechanicus\Cliente;
 
@@ -17,7 +18,17 @@ class ClientesController extends Controller
      */
     public function index()
     {
-        return "Hola desde el controlador del tipo Resource para el Cliente";
+        /*
+         * Por medio del metodo all() para la el modelo Cliente obtenemos todos los registros de dicho modelo que se
+         * encuentran en la base de datos
+        */
+        $clientes = Cliente::all();
+
+        /*
+         * Creación de una vista tipo indice: la cual servirá como acceso a demás recursos.
+         * La función que se utiliza como parámetro en el return llamada compact(), lo que realiza es comunicar los datos
+         * que se encuentran almacenados en alguna variable dentro de esta funcion  */
+        return view('cliente.index', compact('clientes'));
     }
 
     /**
