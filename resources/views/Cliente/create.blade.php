@@ -18,7 +18,8 @@
 
     {{--
         Formulario de Captura, para ello empleamos un metodo HTTP llamado POST, el cual sirve para almacenar datos, en
-         la variable action ingresamos la ruta en la cual deseamos almacenar dichos datos --}}
+         la variable action ingresamos la ruta en la cual deseamos almacenar dichos datos
+     --}}
     <form class="form-group" method="POST" action="/cliente">
         {{-- Token de autentificación --}}
         @csrf
