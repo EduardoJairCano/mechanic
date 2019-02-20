@@ -87,32 +87,40 @@ class ClientesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($slug)
+    public function show(Cliente $cliente)
     {
         /*
         ** Método por ID **
         public function show($id) { ...
-            -- Se tendra que buscar dentro de la base de datos por medio de la busqueda de un
-        atributo en especifico, en este caso seria el ID de la tabla, por medio de la función propia
-        de Eloquent find() --
+        -- Se tendra que buscar dentro de la base de datos por medio de la busqueda de un
+            atributo en especifico, en este caso seria el ID de la tabla, por medio de la función propia
+            de Eloquent find()
+        --
             $cliente = Cliente::find($id);
-            -- En caso de querer implementar solo el uso de un valor Id e instanciar un objeto
-        para la función, se emplea dicho atributo como parámetro. --
+        -- En caso de querer implementar solo el uso de un valor Id e instanciar un objeto
+            para la función, se emplea dicho atributo como parámetro.
+        --
 
         ** Método Implicit Binding **
         public function show(Cliente $cliente) { ...
-            -- En caso de no querer instanciar el objeto en la función  en la cual como parámetro se
-         obtiene un modelo y el nombre del modelo --
+        -- En caso de no querer instanciar el objeto en la función  en la cual como parámetro se
+            obtiene un modelo y el nombre del modelo --
 
-        ** Método por Slug **
+        ** Método por Slug sin función en el Modelo **
         public function show($slug) { ...
-            -- Al implementar un atributo slug para poder ocultar los parámetros de la URL,
-        tendremos que actualizar la funcion show() para la busqueda de un registro. en esta forma
-         es necesario instanciar en una variable el contenido del slug y con el metedo where del
-        propio modelo realizar la busqueda, ademas se emplea una funcion llamada firstOrFail() la
-         cual sirve para intentar encontra el modelo al primer intento. --
+            $cliente = Cliente::where('slug','=', $slug)->firstOrFail();
+        -- Al implementar un atributo slug para poder ocultar los parámetros de la URL, tendremos
+            que actualizar la funcion show() para la busqueda de un registro. en esta forma es
+            necesario instanciar en una variable el contenido del slug y con el metedo where del
+            propio modelo realizar la busqueda, ademas se emplea una funcion llamada firstOrFail()
+            la cual sirve para intentar encontra el modelo al primer intento.
+        --
+
+        ** Método por Slug con función en el modelo **
+        public function show(Cliente $cliente) { ...
+        -- En esta ocación no es necesario crear una instancia dentro de la función tal cual, dado
+            que la función recibirá una instancia del modelo como tal.
         */
-        $cliente = Cliente::where('slug','=', $slug)->firstOrFail();
 
         return view('cliente.show', compact('cliente'));
     }
