@@ -87,18 +87,33 @@ class ClientesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Cliente $cliente)
+    public function show($slug)
     {
-        /*  Se tendra que buscar dentro de la base de datos por medio de la busqueda de un
+        /*
+        ** Método por ID **
+        public function show($id) { ...
+            -- Se tendra que buscar dentro de la base de datos por medio de la busqueda de un
         atributo en especifico, en este caso seria el ID de la tabla, por medio de la función propia
-        de Eloquent find()
+        de Eloquent find() --
             $cliente = Cliente::find($id);
-        En caso de querer implementar solo el uso de un valor Id e instanciar un objeto para la
-        función, se emplea dicho atributo como parámetro.
+            -- En caso de querer implementar solo el uso de un valor Id e instanciar un objeto
+        para la función, se emplea dicho atributo como parámetro. --
 
-            En caso de no querer instanciar el objeto en la función  en la cual como parámetro se
-         obtiene un modelo y el nombre del modelo
+        ** Método Implicit Binding **
+        public function show(Cliente $cliente) { ...
+            -- En caso de no querer instanciar el objeto en la función  en la cual como parámetro se
+         obtiene un modelo y el nombre del modelo --
+
+        ** Método por Slug **
+        public function show($slug) { ...
+            -- Al implementar un atributo slug para poder ocultar los parámetros de la URL,
+        tendremos que actualizar la funcion show() para la busqueda de un registro. en esta forma
+         es necesario instanciar en una variable el contenido del slug y con el metedo where del
+        propio modelo realizar la busqueda, ademas se emplea una funcion llamada firstOrFail() la
+         cual sirve para intentar encontra el modelo al primer intento. --
         */
+        $cliente = Cliente::where('slug','=', $slug)->firstOrFail();
+
         return view('cliente.show', compact('cliente'));
     }
 
