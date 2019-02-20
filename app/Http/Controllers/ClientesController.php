@@ -57,7 +57,7 @@ class ClientesController extends Controller
         if($request->hasfile('avatar')){
             $file = $request->file('avatar');
             $name_file = time().$file->getClientOriginalName();
-            $file->move(oublic_path().'/images/', $name_file);
+            $file->move(public_path().'/images/', $name_file);
         }
         else{
             $name_file = 'default_avatar.png';
@@ -131,9 +131,9 @@ class ClientesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Cliente $cliente)
     {
-        //
+        return view('cliente.edit', compact('cliente'));
     }
 
     /**
@@ -143,9 +143,32 @@ class ClientesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Cliente $cliente)
     {
-        //
+        /* Al obtener el modelo al que se desea editar por medio de Implicit Binding en los parámetros
+            de la función, y por medio de la función fill() que actualiza los datos de una variable
+            la cual es la que se esta instanciando, se podra editar los mismos, con ello solo basta
+            apliar un save() para que dicho registro sea almacenado en la base de datos */
+
+        /* ** En caso de querer actualizar todos los atributos del modelo, se realiza un fill con
+            request->all() **
+            $cliente->fill($request->all());
+
+            ** En caso de querer omitir algun campo para la actualización, se utiliza un exceot()
+            para el request()
+        */
+        $cliente->fill($request->except('avatar'));
+        if($request->hasfile('avatar')){
+            $file = $request->file('avatar');
+            $name_file = time().$file->getClientOriginalName();
+            $cliente->avatar = $name_file; // Actualizanción del nombre del avatar
+            $file->move(public_path().'/images/', $name_file);
+        }
+        else{
+            $name_file = 'default_avatar.png';
+        }
+        $cliente->save();
+        return 'update';
     }
 
     /**
