@@ -8,6 +8,7 @@ namespace mechanicus\Http\Controllers;
 use http\Client;
 use Illuminate\Http\Request;
 use mechanicus\Cliente;
+use mechanicus\Http\Requests\StoreClienteRequest;
 
 class ClientesController extends Controller
 {
@@ -48,7 +49,7 @@ class ClientesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreClienteRequest $request)
     {
         /* ** Validate() **
         Cuando se crea un nuevo registro, es necesario validar cada uno de los atributos que se desean
@@ -59,11 +60,11 @@ class ClientesController extends Controller
         es lo que esta fallando al momento de la captura, dado que la variable que declaramos para la
         validación se almacena en middleare del tipo error, es posible validar si existe algun tipo de
         error o no en la captura, esta iteración se declara en la vista correspondiente
-          */
+
         $validaredData = $request->validate([
-            'nombre' => 'required|max: 25',
-            'domicilio' => 'required|mas: 35'
+            -- validaciones: deben ir en el request --
         ]);
+        */
 
         /* La manera de trabajar con archivos y una base de datos es por medio del almacenamiento del nombre del archivo
         primero se comprueba si existe un atributo del tipo file y despues se hace la obtención de los datos del mismo,
