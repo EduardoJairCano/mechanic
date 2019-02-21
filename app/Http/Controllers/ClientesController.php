@@ -69,6 +69,7 @@ class ClientesController extends Controller
         $cliente->nombre = $request->input('nombre');
         $cliente->domicilio = $request->input('domicilio');
         $cliente->avatar = $name_file;
+        $cliente->slug = $cliente->nombre.time();
         $cliente->save();
         return 'Cliente agregado exitosamente';
 

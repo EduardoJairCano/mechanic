@@ -175,6 +175,9 @@ return [
         mechanicus\Providers\EventServiceProvider::class,
         mechanicus\Providers\RouteServiceProvider::class,
 
+        // Provider para Laravel Collective
+        Collective\Html\HtmlServiceProvider::class,
+
     ],
 
     /*
@@ -223,6 +226,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        // Aliases para Laravel Collective
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
