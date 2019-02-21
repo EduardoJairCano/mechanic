@@ -50,6 +50,21 @@ class ClientesController extends Controller
      */
     public function store(Request $request)
     {
+        /* ** Validate() **
+        Cuando se crea un nuevo registro, es necesario validar cada uno de los atributos que se desean
+        agregar a la base de datos, para ello se utiliza la funación validate(), la cual se le realiza al
+        request que contiene los datos a almacenar, previo a la validación, se asignan a un nueva variable.
+
+        En caso de no cumplir con los requerimientos solicitados, es posible hacerle saber al usuario que
+        es lo que esta fallando al momento de la captura, dado que la variable que declaramos para la
+        validación se almacena en middleare del tipo error, es posible validar si existe algun tipo de
+        error o no en la captura, esta iteración se declara en la vista correspondiente
+          */
+        $validaredData = $request->validate([
+            'nombre' => 'required|max: 25',
+            'domicilio' => 'required|mas: 35'
+        ]);
+
         /* La manera de trabajar con archivos y una base de datos es por medio del almacenamiento del nombre del archivo
         primero se comprueba si existe un atributo del tipo file y despues se hace la obtención de los datos del mismo,
         se iguala el nombre a una variable y se le puede agregar el tiempo como parametro complementario y asi evitar
