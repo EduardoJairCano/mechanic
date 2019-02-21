@@ -47,7 +47,7 @@
             {!! Form::file('avatar') !!}
         </div>
 
-        {!! Form::submit('Guardad', ['class'=>'btn btn-primary']) !!}
+        {!! Form::submit('Guardar', ['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}
 
 
