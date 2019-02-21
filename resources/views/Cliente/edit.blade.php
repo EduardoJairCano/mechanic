@@ -16,20 +16,7 @@
 
     {!! Form::model($cliente, ['route'=>['cliente.update', $cliente], 'method'=>'PUT', 'files'=>true]) !!}
 
-        <div class="form-group">
-            {!! Form::label('nombre', 'Nombre') !!}
-            {!! Form::text('nombre', null, ['class'=>'form-control']) !!}
-        </div>
-
-        <div class="form-group">
-            {!! Form::label('domicilio', 'Domicilio') !!}
-            {!! Form::text('domicilio', null, ['class'=>'form-control']) !!}
-        </div>
-
-        <div class="form-group">
-            {!! Form::label('avatar', 'Avatar') !!}
-            {!! Form::file('avatar') !!}
-        </div>
+        @include('cliente.form')
 
         {!! Form::submit('Actualizar', ['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}

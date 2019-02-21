@@ -30,22 +30,8 @@
     --}}
     {!! Form::open(['route'=>'cliente.store', 'method'=>'POST', 'files'=>true]) !!}
 
-        <div class="form-group">
-            {{-- Sub-formulario para un Label, el cual recibe el nombre del campo y el valor del mismo --}}
-            {!! Form::label('nombre', 'Nombre') !!}
-            {{-- Sub-formulario para un Text, y en un arreglo se transmite las clases propias --}}
-            {!! Form::text('nombre', null, ['class'=>'form-control']) !!}
-        </div>
-
-        <div class="form-group">
-            {!! Form::label('domicilio', 'Domicilio') !!}
-            {!! Form::text('domicilio', null, ['class'=>'form-control']) !!}
-        </div>
-
-        <div class="form-group">
-            {!! Form::label('avatar', 'Avatar') !!}
-            {!! Form::file('avatar') !!}
-        </div>
+        {{-- Con la directiva @include('<direccion.vista>') agregamos una sub-vista --}}
+        @include('cliente.form')
 
         {!! Form::submit('Guardar', ['class'=>'btn btn-primary']) !!}
     {!! Form::close() !!}
