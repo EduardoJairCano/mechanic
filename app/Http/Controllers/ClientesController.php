@@ -194,8 +194,19 @@ class ClientesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Cliente $cliente)
     {
-        //
+        /*
+        Para eliminar un registro dentro de la base de datos, basta con instanciar el modelo y aplicar la
+        funcion delete().
+        En caso de almacenar archivos y se contemple tambien eliminarlos de los registros, se tendria que
+        utilizar una función que pueda realizarlo, dado que con el delete solo eliminamos los que se
+        encuentra en la base de datos */
+        $file_path = public_path().'/images/'.$cliente->avatar;
+        if ($file_path != 'default_avatar.png') {
+            \File::delete($file_path);
+        }
+        $cliente->delete();
+        return 'Cliente eliminado';
     }
 }

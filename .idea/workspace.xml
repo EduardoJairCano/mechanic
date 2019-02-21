@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4c075f29-a267-427b-a5a6-7a07a65f84a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/default_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Cliente/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Cliente/show.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +20,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="88" column="25" lean-forward="true" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+            <state relative-caret-position="-695">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#241#257#0#PHP" expanded="true" />
                 <element signature="e#468#1092#0#PHP" />
                 <element signature="e#1212#1353#0#PHP" />
+                <element signature="e#1543#4013#0#PHP" />
                 <element signature="e#3205#5028#0#PHP" />
                 <element signature="e#5179#5286#0#PHP" />
                 <element signature="e#5479#6738#0#PHP" />
@@ -33,37 +36,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/StoreClienteRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Cliente/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Cliente/edit.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/Cliente/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Cliente/form.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <caret line="6" column="92" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -93,14 +69,14 @@
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_19_175421_agregar_slu_a__clientes.php" />
         <option value="$PROJECT_DIR$/resources/views/Cliente/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Cliente/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Cliente.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/views/Cliente/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Cliente/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Cliente/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ClientesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/StoreClienteRequest.php" />
+        <option value="$PROJECT_DIR$/resources/views/Cliente/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ClientesController.php" />
       </list>
     </option>
   </component>
@@ -238,6 +214,17 @@
             <path>
               <item name="mechanicus" type="b2602c69:ProjectViewProjectNode" />
               <item name="mechanicus" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mechanicus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mechanicus" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mechanicus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mechanicus" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -301,12 +288,12 @@
       <workItem from="1550160260207" duration="933000" />
       <workItem from="1550174919710" duration="5727000" />
       <workItem from="1550248916298" duration="2506000" />
-      <workItem from="1550253056714" duration="61025000" />
+      <workItem from="1550253056714" duration="63618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79664000" />
+    <option name="totallyTimeSpent" value="82257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1618" height="887" extended-state="6" />
@@ -467,16 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Cliente/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding>
-            <element signature="e#83#159#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Cliente/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -516,14 +493,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/StoreClienteRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="88" column="25" lean-forward="true" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+        <state relative-caret-position="-695">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#241#257#0#PHP" expanded="true" />
             <element signature="e#468#1092#0#PHP" />
             <element signature="e#1212#1353#0#PHP" />
+            <element signature="e#1543#4013#0#PHP" />
             <element signature="e#3205#5028#0#PHP" />
             <element signature="e#5179#5286#0#PHP" />
             <element signature="e#5479#6738#0#PHP" />
@@ -531,10 +516,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/StoreClienteRequest.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/Cliente/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="138">
+          <caret line="6" column="92" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="92" />
         </state>
       </provider>
     </entry>
