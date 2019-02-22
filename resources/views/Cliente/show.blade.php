@@ -11,8 +11,19 @@
         <p>Domicilio: {{$cliente->domicilio}} </p>
         <a href="/cliente/{{$cliente->slug}}/edit" class="btn btn-primary">Ver más</a>
 
+       {{-- ** Formato Colective
         {!! Form::open(['route'=>['cliente.destroy', $cliente->slug], 'method'=>'DELETE']) !!}
             {!! Form::submit('Eliminar', ['class'=>'btn btn-danger']) !!}
         {!! Form::close() !!}
+        --}}
+
+        <form method="POST" action="/cliente/{{$cliente->slug}}">
+            {{ csrf_field() }}
+            {{ method_field('DELETE') }}
+            <div class="form-group">
+                <input type="submit" class="btn btn-danger" value="Eliminar">
+            </div>
+        </form>﻿
+
     </div>
 @endsection

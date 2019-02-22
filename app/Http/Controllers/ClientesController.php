@@ -203,7 +203,7 @@ class ClientesController extends Controller
         utilizar una función que pueda realizarlo, dado que con el delete solo eliminamos los que se
         encuentra en la base de datos */
         $file_path = public_path().'/images/'.$cliente->avatar;
-        if ($file_path != 'default_avatar.png') {
+        if ($file_path != public_path().'/images/default_avatar.png') {
             \File::delete($file_path);
         }
         $cliente->delete();
