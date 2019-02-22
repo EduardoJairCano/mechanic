@@ -3,6 +3,15 @@
 @section('title', 'Cliente')
 
 @section('content')
+
+    {{-- Para revisar si el status al llegar a esta opcion es adecuado, basta con implementar un if-endif
+    para obtener dicho status y en dado caso mostrar dicha alerta--}}
+    @if (session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif
+
     <img style="height: 100px; width: 100px; background-color: #EFEFEF; margin:20px;"
          class="card-img-top rounded-circle mx-auto d-block" src="/images/{{$cliente->avatar}}"
          alt="">

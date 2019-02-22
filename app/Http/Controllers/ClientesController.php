@@ -185,7 +185,13 @@ class ClientesController extends Controller
             $name_file = 'default_avatar.png';
         }
         $cliente->save();
-        return 'update';
+
+        /* Para regresar a alguna ruta en especidifco, previo a la accion de la función, basta con utilizar un
+        redireccionamiento con el formato:
+            return redirect()->route( '<direccion.función>', [$<modelo_actualizado>])
+                                -> ('status', '<Mensaje_para status correcto>')
+        */
+        return redirect()->route('cliente.show', [$cliente])->with('status', 'Los datos han sido actualizdos');
     }
 
     /**

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c075f29-a267-427b-a5a6-7a07a65f84a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Cliente/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Cliente/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Cliente/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Cliente/show.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,14 +19,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="205" column="48" selection-start-line="205" selection-start-column="48" selection-end-line="205" selection-end-column="48" />
+            <state relative-caret-position="507">
+              <caret line="192" column="8" selection-start-line="192" selection-start-column="8" selection-end-line="192" selection-end-column="8" />
               <folding>
                 <element signature="e#241#257#0#PHP" expanded="true" />
                 <element signature="e#1573#4055#0#PHP" />
                 <element signature="e#4188#6011#0#PHP" />
                 <element signature="e#6162#6269#0#PHP" />
-                <element signature="e#6462#7721#0#PHP" />
+                <element signature="e#7866#8537#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -37,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Cliente/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state relative-caret-position="161">
+              <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -285,12 +283,12 @@
       <workItem from="1550174919710" duration="5727000" />
       <workItem from="1550248916298" duration="2506000" />
       <workItem from="1550253056714" duration="65888000" />
-      <workItem from="1550807136623" duration="825000" />
+      <workItem from="1550807136623" duration="2052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85352000" />
+    <option name="totallyTimeSpent" value="86579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1618" height="887" extended-state="6" />
@@ -499,21 +497,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Cliente/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="161">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="205" column="48" selection-start-line="205" selection-start-column="48" selection-end-line="205" selection-end-column="48" />
+        <state relative-caret-position="507">
+          <caret line="192" column="8" selection-start-line="192" selection-start-column="8" selection-end-line="192" selection-end-column="8" />
           <folding>
             <element signature="e#241#257#0#PHP" expanded="true" />
             <element signature="e#1573#4055#0#PHP" />
             <element signature="e#4188#6011#0#PHP" />
             <element signature="e#6162#6269#0#PHP" />
-            <element signature="e#6462#7721#0#PHP" />
+            <element signature="e#7866#8537#0#PHP" />
           </folding>
         </state>
       </provider>
