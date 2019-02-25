@@ -4,6 +4,7 @@
 
 @section('content')
 
+    @include('Common.errors')
     {{--
       En esta ocasion se emplea la construcción de un formulario por medio de Model Binding, dado que la
         operación que se va a realizar es de editar, es necesario que sea de esta manera, cuya forma seria

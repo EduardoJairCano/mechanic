@@ -161,7 +161,7 @@ class ClientesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Cliente $cliente)
+    public function update(StoreClienteRequest $request, Cliente $cliente)
     {
         /* Al obtener el modelo al que se desea editar por medio de Implicit Binding en los parámetros
             de la función, y por medio de la función fill() que actualiza los datos de una variable
