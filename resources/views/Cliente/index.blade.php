@@ -2,8 +2,12 @@
 
 @section('title', 'Clientes')
 
-@section('content')
+@section('item_nav')
+    <a href="/cliente/create" class="navbar-brand">Nuevo cliente</a>
+@endsection
 
+@section('content')
+    @include('Common.success')
     <div class="row">
         {{--
         Dentro del foreach() se puede obtener y manipular la informacion contenida en un arreglo,

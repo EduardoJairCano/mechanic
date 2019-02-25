@@ -2,7 +2,6 @@
     Creacion de la primera plantilla de blade
     Este archivo funcionará como archivo base para algunas otros archivos o páginas, en este tipo de archivos se podra
         localizar ciertas directivas de Laravel, uno de las principales es @yield() en la cuale se rempleza contenido
-
 --}}
 <html>
     <head>
@@ -11,7 +10,8 @@
         <body>
             {{-- Creaci+on de barra de navegación --}}
             <nav class="navbar navbar-dark bg-primary">
-                <a href="" class="navbar-brand">Mechanicus</a>
+                <a href="/cliente" class="navbar-brand">Mechanicus</a>
+                @yield('item_nav')
             </nav>
 
             <div class="container">

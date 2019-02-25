@@ -87,7 +87,8 @@ class ClientesController extends Controller
         $cliente->avatar = $name_file;
         $cliente->slug = $cliente->nombre.time();
         $cliente->save();
-        return 'Cliente agregado exitosamente';
+        //return 'Cliente agregado exitosamente';
+        return redirect()->route('cliente.index', [$request])->with('status', 'El cliente ha sido almacenado correctamente');
 
         /* Regresa un campo en específico
         return $request->input('nombre');
@@ -191,7 +192,7 @@ class ClientesController extends Controller
             return redirect()->route( '<direccion.función>', [$<modelo_actualizado>])
                                 -> ('status', '<Mensaje_para status correcto>')
         */
-        return redirect()->route('cliente.show', [$cliente])->with('status', 'Los datos han sido actualizdos');
+        return redirect()->route('cliente.show', [$cliente])->with('status', 'Los datos han sido actualizados');
     }
 
     /**
@@ -213,6 +214,7 @@ class ClientesController extends Controller
             \File::delete($file_path);
         }
         $cliente->delete();
-        return 'Cliente eliminado';
+        //return 'Cliente eliminado';
+        return redirect()->route('cliente.index', [$cliente])->with('status', 'El registro ha sido eliminado');
     }
 }

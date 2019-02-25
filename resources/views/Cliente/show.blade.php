@@ -13,7 +13,7 @@
     <div class="text-center">
         <h5 class="card-title"> {{$cliente->nombre}} </h5>
         <p>Domicilio: {{$cliente->domicilio}} </p>
-        <a href="/cliente/{{$cliente->slug}}/edit" class="btn btn-primary">Ver más</a>
+        <a href="/cliente/{{$cliente->slug}}/edit" class="btn btn-primary">Actualizar</a>
 
        {{-- ** Formato Colective
         {!! Form::open(['route'=>['cliente.destroy', $cliente->slug], 'method'=>'DELETE']) !!}
