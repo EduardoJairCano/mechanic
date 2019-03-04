@@ -47,3 +47,7 @@ Route::get('/prueba/{name?}', 'PruebaController@prueba');
     Para cada una de las acciones posibles para este controlador, es necesario escribir el tipo de acción HTTP adecuado.
 */
 Route::resource('/cliente', 'ClientesController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
