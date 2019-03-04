@@ -11,6 +11,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        /*
+         Para que se realicen los nuevos cambios realizados por los seeders es necesario utilizar esta función
+            para llamar a las demas
+        */
+        $this->call(RoleTableSeeder::class);
+        $this->call(UserTableSeeder::class);
     }
 }
