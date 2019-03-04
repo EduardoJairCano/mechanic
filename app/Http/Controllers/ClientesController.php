@@ -22,7 +22,7 @@ class ClientesController extends Controller
         /*
         Se agrega el parámetro del tipo Request para obtener todos los datos del usuario, y se empleará la función que
             valida al tipo de usuario como que se refirencia como parámetro, el cual será el que tendra acceso a la vista */
-        $request->user()->authorizedRoles('admin');
+        $request->user()->authorizedRoles(['admin','user']);
         /*
          * Por medio del metodo all() para la el modelo Cliente obtenemos todos los registros de dicho modelo que se
          * encuentran en la base de datos
