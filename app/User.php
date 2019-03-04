@@ -20,7 +20,7 @@ class User extends Authenticatable
      * @param object
      * @return boolean
      */
-    public function authorizeRoles($roles) {
+    public function authorizedRoles($roles) {
         if($this->hasAnyRole($roles)) {
             return true;
         }
